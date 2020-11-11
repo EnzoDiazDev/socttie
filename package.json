@@ -1,22 +1,24 @@
 {
-  "name": "lottiets",
+  "name": "@lottielabs/socttie",
   "version": "1.0.0",
-  "description": "Una plantilla con mi estilo y algunas dependencias",
-  "main": "./dist/Main.js",
+  "description": "socttie es una extensión para Socket.io, hecha con y para typescript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "prepare": "npm run build",
     "dev": "cross-env NODE_ENV=development ts-node ./src/Main.ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EnzoDiazDev/lottiets.git"
+    "url": "git+https://github.com/lottielabs/socttie.git"
   },
   "author": "Enzo Diaz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EnzoDiazDev/lottiets/issues"
+    "url": "https://github.com/lottielabs/socttie/issues"
   },
-  "homepage": "https://github.com/EnzoDiazDev/lottiets#readme",
+  "homepage": "https://github.com/lottielabs/socttie#readme",
   "devDependencies": {
     "@types/node": "^14.11.1",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
@@ -32,5 +34,7 @@
     "typescript": "^4.0.3"
   },
   "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "socket.io": "^3.0.1"
   }
 }
