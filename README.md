@@ -1,1 +1,1 @@
-Una plantilla con mi estilo y algunas dependencias.
+ socttie es una extensión para Socket.io, hecha con y para typescript. 
