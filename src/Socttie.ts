@@ -1,13 +1,13 @@
 import { Server as HTTPServer } from "http";
-import { Server, ServerOptions } from "socket.io";
+import * as SocketIO from "socket.io";
 
 export default class Socttie {
     private server:HTTPServer
-    private io:Server
+    private io:SocketIO.Server
 
-    constructor(_server:HTTPServer, options?:ServerOptions){
+    constructor(_server:HTTPServer, options?:SocketIO.ServerOptions){
         this.server = _server;
-        this.io = new Server(this.server, options);
+        this.io = new SocketIO.Server(this.server, options);
     }
 
 
